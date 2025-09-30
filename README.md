@@ -29,7 +29,7 @@ Goals:
 We simulated the data and wanted to answer a question: to evaluate the effect of a **loyalty program** on customer spending. But the bias is that customers who join the program are **not random** — they are typically more active and higher-spending even before enrollment. 
 
 Several methods have been considered:
-- Prospensity score 
+- Propensity score 
 - Inverse Probability of Treatment Weighting (IPTW)
 - DoWhy Framework 
 
