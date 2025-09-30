@@ -2,8 +2,9 @@
 
 This project evaluates how well different causal inference methods can recover a known treatment effect using simulated, observational-style panel data.
 
-We simulate the introduction of a scooter-sharing service in Region 8 starting in 2018, which results in a 25% synthetic drop in taxi ownership. This artificial effect is injected into otherwise realistic regional panel data, mimicking official statistics from Sweden (SCB) for the period 2002–2024.
+## Methods_application 
 
+We simulate the introduction of a scooter-sharing service in Region 8 starting in 2018, which results in a 25% synthetic drop in taxi ownership. This artificial effect is injected into otherwise realistic regional panel data, mimicking official statistics from Sweden (SCB) for the period 2002–2024.
 
 Data Source: Statistics Sweden (SCB) from 2002 to 2024 
 
@@ -17,9 +18,19 @@ Several causal inference methods are compared:
 
 Control Regions were chosen with Nearest Neighbor Matching (NNM) and Propensity Score Matching (PSM) methods 
 
-
 Goals:
 
 - Simulate a realistic policy intervention.
 - Evaluate performance, robustness, and interpretability of each method.
 - Understand statistical significance through permutation tests and metrics
+
+## Propensity_score 
+
+We simulated the data and wanted to answer a question: to evaluate the effect of a **loyalty program** on customer spending. But the bias is that customers who join the program are **not random** — they are typically more active and higher-spending even before enrollment. 
+
+Several methods have been considered:
+- Prospensity score 
+- Inverse Probability of Treatment Weighting (IPTW)
+- DoWhy Framework 
+
+
